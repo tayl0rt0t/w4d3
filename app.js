@@ -107,7 +107,7 @@ For every even number in your loop, log "...human...why you taking pictures of m
 let catArray = [
     "...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."
 ]
-//let result = catArray [Math.floor(Math.random() * catArray.length)];
+
 for(let i = 0; i <= 20; i++){
     let result = catArray [Math.floor(Math.random() * catArray.length)];
     if (i % 2 == 0){
@@ -115,3 +115,11 @@ for(let i = 0; i <= 20; i++){
     }
     console.log("Love me, pet me! HSSSSSS!");
 }
+/*
+Find the Median
+Find the median number in the following numsarray, then console.log that number.
+hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
+*/
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+let median = nums[Math.floor(nums.length / 2 )];
+console.log(median);
